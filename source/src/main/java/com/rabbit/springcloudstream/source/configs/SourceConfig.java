@@ -1,16 +1,11 @@
 package com.rabbit.springcloudstream.source.configs;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.messaging.Source;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 
 @Slf4j
-@Configuration("sourceConfig")
-@EnableBinding(Source.class)
-@EnableScheduling
+// @Configuration("sourceConfig")
+@Deprecated
 public class SourceConfig {
 
 	/*

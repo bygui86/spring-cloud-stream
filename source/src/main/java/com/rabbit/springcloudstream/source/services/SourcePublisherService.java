@@ -13,6 +13,7 @@ import java.util.Date;
 public class SourcePublisherService {
 
 	/*
+		VERSION 5 (See SourceConfig.java) - Another Spring Integration style
 		@Publisher publish the result to the channel and return it to the caller
 	 */
 	@Publisher(channel = Source.OUTPUT)
