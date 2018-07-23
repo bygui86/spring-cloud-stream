@@ -17,12 +17,10 @@ public class SourcePublisherService {
 		@Publisher publish the result to the channel and return it to the caller
 	 */
 	@Publisher(channel = Source.OUTPUT)
-	public Long sendTimeMessage(final String ignoredInput) {
-
-		log.debug("Ignored input: {}", ignoredInput);
+	public Long sendTimeMessage(final int messageNumber) {
 
 		final long timestamp = new Date().getTime();
-		log.info("Send: {}", timestamp);
+		log.info("Sending message number {}: {}", messageNumber, timestamp);
 		return timestamp;
 	}
 
